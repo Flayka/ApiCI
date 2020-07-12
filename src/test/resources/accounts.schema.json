@@ -10,10 +10,6 @@
       "balance",
       "currency"
     ],
-    "patternProperties": {
-      "^RUB": { "type": "string" },
-      "^USD": { "type": "string" }
-    },
     "additionalProperties": false,
     "properties": {
       "id": {
@@ -31,7 +27,8 @@
         "type": "integer"
       },
       "currency": {
-        "type": "string"
+        "type": "string",
+        "enum": ["RUB", "USD"]
       }
     }
   }
